@@ -24,7 +24,7 @@ def cli(n, p, k, fn, fp, fk, coverage, area):
     kc = round(coverages[2], 3)
 
     click.echo(
-        f"Coverages in pounds for {area} square feet.\n\tNitrogen: {nc} lbs\n\Phosphorus: {pc} lbs\n\Potassium: {kc} lbs")
+        f"Coverages in pounds for {area} square feet.\n\tNitrogen: {nc} lbs\n\tPhosphorus: {pc} lbs\n\tPotassium: {kc} lbs")
 
 
 if __name__ == '__main__':
