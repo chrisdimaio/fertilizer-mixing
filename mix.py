@@ -17,10 +17,10 @@ def calculate(n, p, k, fn, fp, fk, coverage, area):
     p_adjusted = p_coverage/p_concentration
     k_adjusted = k_coverage/k_concentration
 
-    scaler = area/1000
+    scalar = area/1000
 
-    n_scaled = n_adjusted * scaler
-    p_scaled = p_adjusted * scaler
-    k_scaled = k_adjusted * scaler
+    n_scaled = n_adjusted * scalar
+    p_scaled = p_adjusted * scalar
+    k_scaled = k_adjusted * scalar
 
     return (n_scaled, p_scaled, k_scaled)
