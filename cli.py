@@ -15,8 +15,8 @@ from mix import calculate
 def cli(n, p, k, fn, fp, fk, coverage, area):
     click.echo(f"Desired ratio {n}-{p}-{k}")
     click.echo(
-        (f"Fertilizer content:\n\tnitrogen={fn}\n\phosphorus={fp}\n\potassium={fk}"))
-    click.echo(f"Coverage is {coverage} lbs per square foot")
+        (f"Fertilizer content:\n\tNitrogen={fn}\n\tPhosphorus={fp}\n\tPotassium={fk}"))
+    click.echo(f"Coverage is {coverage} lbs per 1,000 square feet")
 
     coverages = calculate(n, p, k, fn, fp, fk, coverage, area)
     nc = round(coverages[0], 3)
